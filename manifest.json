@@ -1,0 +1,28 @@
+{
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "match_about_blank": true,
+      "js": [
+        "script.js"
+      ],
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://youtube.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+   "icons": {
+      "128": "icons/128.png"
+   },
+  "description": "Hotpot for YouTube™",
+  "manifest_version": 2,
+  "minimum_chrome_version": "50.0",
+  "name": "Hotpot for YouTube™",
+  "permissions": [
+    "https://*/*"
+  ],
+  "incognito": "spanning",
+  "version": "1.1.1"
+}
